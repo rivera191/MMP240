@@ -1,0 +1,59 @@
+body{
+    background-color: burlywood !important;
+}
+h1{
+    font-family:Blox2 !important;
+    font-size: 50px;
+    font-weight:bold;
+    text-shadow: 3px 7px 4px white;
+    color:black !important;
+}
+p{
+    color: #575757;
+}
+.myMenu a{
+    color:white;
+}
+.myMenu a:hover{
+    color:white;
+}
+#index div{
+    padding-bottom: 50px;
+}
+.myMenu{
+    background-color: black;
+    width:300px;
+    height:100vh;/***100% of the height of the viewport***/
+    position:fixed;
+    right:0;
+    z-index: 1000;
+    opacity:0.8;
+    padding-top: 100px;
+}
+body{
+    background-color: beige;
+}
+@font-face{
+    font-family:Blox2;
+    src: url("Blox2.ttf");
+}
+
+
+
+/*work.html*/
+#work #myCarousel{
+    padding:15px ;
+}
+#work #myCarousel img{
+    width:100vw;
+}
+#work .bg-brown{
+    background-color: saddlebrown;
+    padding:30px;
+    margin:25px;
+    border:double white 10px;
+    box-shadow:3px 7px 10px grey; 
+}
+#work img{
+    border:solid white 7px;
+}
