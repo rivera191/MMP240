@@ -3,10 +3,11 @@ body{
 }
 h1{
     font-family:Blox2 !important;
-    font-size: 50px;
+    font-size: 50px !important;
     font-weight:bold;
     text-shadow: 3px 7px 4px white;
     color:black !important;
+    letter-spacing: 4px;
 }
 p{
     color: #575757;
@@ -17,19 +18,20 @@ p{
 .myMenu a:hover{
     color:white;
 }
-#index div{
-    padding-bottom: 50px;
-}
+
 .myMenu{
     background-color: black;
     width:300px;
     height:100vh;/***100% of the height of the viewport***/
     position:fixed;
-    right:0;
+    right:-300;
     z-index: 1000;
     opacity:0.8;
     padding-top: 100px;
+    transition:1s;
+    -webkit-transition: 1s;/*for safari 3.1 to 6.0*/
 }
+
 body{
     background-color: beige;
 }
@@ -37,7 +39,6 @@ body{
     font-family:Blox2;
     src: url("Blox2.ttf");
 }
-
 
 
 /*work.html*/
@@ -108,11 +109,16 @@ body{
     div{
         padding:10px 40px;
     }
-    body{
-        background-color: aliceblue !important;
-    }
-    h1{
-        text-shadow: 3px 7px 4px grey;
+    #index .myMenu{
+        background-color: black;
+        width:100px !important;
+        position:fixed;
+        right:-100;
+        z-index: 1000;
+        opacity:0.8;
+        padding-top: 100px;
+        transition:1s;
+        -webkit-transition: 1s;/*for safari 3.1 to 6.0*/
     }
 }
 
@@ -121,8 +127,8 @@ body{
     div{
         padding:10px;
     }
-    #work #portfolio ,.bg-blue ,.bg-red,.bg-black ,.bg-brown{
-        background-color:saddlebrown ; 
+    #work #portfolio, .bg-blue ,.bg-red,.bg-black,.bg-brown {
+        background-color:saddlebrown !important; 
         padding:20px;
         margin:25px;
         border:double white 10px;
@@ -134,6 +140,10 @@ body{
         border:solid white;
         border-radius: 30px;
     }
+    #work #portfolio ,h5{
+        font-size: 16px!important;
+    }
+    
 }
 
 /* Large devices (large desktops, 1200px and below) */
