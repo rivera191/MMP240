@@ -111,14 +111,22 @@ body{
     }
     #index .myMenu{
         background-color: black;
-        width:100px !important;
-        position:fixed;
-        right:-100;
+        width:100vw !important;
+        height:40px;
+        position: ;
+        right:-100vw;
         z-index: 1000;
-        opacity:0.8;
-        padding-top: 100px;
+        opacity: none;
+        padding-top: 0px;
+        padding-bottom:10px
         transition:1s;
         -webkit-transition: 1s;/*for safari 3.1 to 6.0*/
+    }
+    #index .myMenu div{
+        display:inline-block;
+        margin:10 auto;
+        width:100px!important;
+        
     }
 }
 
